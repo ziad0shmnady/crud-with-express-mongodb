@@ -9,7 +9,8 @@ const connectDB=require('./server/database/connection')
 const app = express();
 
 dotenv.config({ path: 'config.env' })
-const port = process.env.port
+
+const port = process.env.PORT || 8000
 
 connectDB();
 
